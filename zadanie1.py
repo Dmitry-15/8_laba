@@ -6,7 +6,8 @@ if __name__ == '__main__':
     school = {}
     for i in range(7):
         school.update(
-            {input(f'Название класса № {i + 1} : '): int(input(f'Количество учеников в классе № {i + 1} : '))})
+            {input(f'Название класса № {i + 1} : '): int(
+                input(f'Количество учеников в классе № {i + 1} : '))})
     print(school)
     klas = input('Введите название класса: ')
     if klas in school:
@@ -19,7 +20,8 @@ if __name__ == '__main__':
     print(school)
     for i in range(1):
         school.update(
-            {input(f'Название нового класса {i + 1} : '): int(input(f'Количество учеников нового класса {i + 1} : '))})
+            {input(f'Название нового класса {i + 1} : '): int(
+                input(f'Количество учеников нового класса {i + 1} : '))})
     print(school)
     del school[input(f'Название расформировываемого класса: ')]
     print(school)
